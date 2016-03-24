@@ -12,9 +12,8 @@ if (isset($_POST['btn_send'])) { //quando clicar faca o seguinte:
 							  SENHA_DB,
 							  NOME_DB);
 							  
-	echo '<pr>';
-	var_dump ($db_conn);
-	echo '</pr>';
+	$stmt = mysqli_prepare($db_conn, ' SELECT 	
+									 ')
 	
 	if (isset($logins[$_POST['login']])) { //se for V o que ele digitou faca:
 		
